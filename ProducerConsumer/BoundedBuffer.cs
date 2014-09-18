@@ -27,15 +27,15 @@ namespace ProducerConsumer
 
         public Boolean IsFull()
         {
-            if (Capacity >= _queue.Count)
-                return true;
+            if (Capacity < _queue.Count)
+                return false;
 
-            return false;
+            return true;
         }
 
         public void Put(int element)
         {
-            
+            _queue.Enqueue(element);
         }
 
         public int Take()
