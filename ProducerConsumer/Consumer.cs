@@ -7,12 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProducerConsumer
 {
-    public class Producer
+    public class Consumer
     {
-        private static int LastElement = -1;
-        private static int LastItem = -1;
-
-        public Producer(IBuffer buffer, int howMany)
+        public Consumer(IBuffer buffer)
         {
             
         }
