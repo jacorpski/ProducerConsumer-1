@@ -10,6 +10,8 @@ namespace ProducerConsumer
     {
         private int _capacity;
 
+        private Queue<int> _queue; 
+
         public int Capacity
         {
             get { return _capacity; }
@@ -18,7 +20,9 @@ namespace ProducerConsumer
 
         public BoundedBuffer(int capacity)
         {
-            
+            Capacity = capacity;
+
+            _queue = new Queue<int>(capacity);
         }
 
         public Boolean IsFull()
