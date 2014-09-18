@@ -40,7 +40,7 @@ namespace ProducerConsumer
 
         public int Take()
         {
-            
+            return _queue.Dequeue();
         }
     }
 }
