@@ -9,7 +9,7 @@ namespace ProducerConsumer
 {
     public class Consumer
     {
-        public Consumer(IBuffer buffer)
+        public Consumer(BoundedBuffer buffer)
         {
             
         }
