@@ -8,6 +8,14 @@ namespace ProducerConsumer
 {
     public class BoundedBuffer
     {
+        private int _capacity;
+
+        public int Capacity
+        {
+            get { return _capacity; }
+            set { _capacity = value; }
+        }
+
         public BoundedBuffer(int capacity)
         {
             
